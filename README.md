@@ -1,7 +1,3 @@
-# Slenderman
-
-A condensed, hand-drawn typeface.
-
 ## Requirements for contributing
 - [http://glyphsapp.com/](Glyphs) or [http://glyphsapp.com/glyphs-mini/](Glyphs Mini) - I use Glyphs Mini because I'm a weekend warrior when it comes to typography.
 - Adobe Illustrator (sorry). You might be able to use Sketch or another vector editor?
