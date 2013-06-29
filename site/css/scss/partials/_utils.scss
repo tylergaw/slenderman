@@ -1,0 +1,11 @@
+@function calc-percent($target, $context) {
+    @return ($target / $context) * 100%;
+}
+
+@mixin clearfix {
+    &:after {
+        clear: both;
+        content: "";
+        display: block;
+    }
+}

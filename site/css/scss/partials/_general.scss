@@ -1,0 +1,139 @@
+$accentColor: rgb(40, 162, 185);
+$accentColor: #b0c46b;
+$accentColor: #ad78cc;
+
+$backgroundColor: rgb(34, 33, 28);
+$footerBgColor: darken($backgroundColor, 1.2);
+
+$accentColorComplement: adjust-hue(darken($accentColor, 10), 180);
+
+html {
+    background-color: $footerBgColor;
+    height: 100%;
+}
+
+body {
+    background-color: $backgroundColor;
+    border-top: 20px solid darken($accentColor, 10);
+    color: #f1f1f1;
+    @include slenderman;
+    font-size: 2.2em;
+
+    @media all and (min-width: 500px) {
+        font-size: 2.8em;
+    }
+}
+
+a {
+    border-bottom: 1px solid $accentColor;
+    color: #f1f1f1;
+    display: inline-block;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        border-bottom-color: $accentColorComplement;
+        color: $accentColorComplement;
+    }
+}
+
+[role="banner"] {
+    margin: 0 auto;
+    padding: 0.9em 0;
+    text-align: center;
+
+    h1 {
+        font-size: 2.8em;
+        letter-spacing: -0.03em;
+        line-height: 0.9;
+        text-transform: uppercase;
+
+        @media all and (min-width: 320px) {
+            font-size: 3.6em;
+        }
+
+        @media all and (min-width: 420px) {
+            font-size: 4.8em;
+        }
+
+        @media all and (min-width: 580px) {
+            font-size: 5.6em;
+        }
+
+        @media all and (min-width: 650px) {
+            font-size: 6.2em;
+        }
+    }
+
+    h2 {
+        color: $accentColor;
+        font-size: 0.9em;
+        letter-spacing: 0.05em;
+    }
+}
+
+[role="main"] {
+    border-top: 4px solid $accentColor;
+    font-size: 1.2em;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 85%;
+}
+
+.download {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.download-btn {
+    background-color: adjust-hue($accentColorComplement, 90);
+    border-bottom: 0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: $backgroundColor;
+    font-size: 0.8em;
+    padding: 0.3em 0.8em 0.3em 0.8em;
+    text-align: center;
+    width: 100%;
+
+    span {
+        display: block;
+        font-size: 2em;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+
+    &:hover {
+        background-color: $accentColorComplement;
+        color: $footerBgColor;
+    }
+}
+
+.description {
+    color: darken(#f1f1f1, 5);
+    font-size: 0.8em;
+    padding: 1em 0.2em 0.2em 0.2em;
+
+    p {
+        letter-spacing: 0.03em;
+        line-height: 1.1;
+        margin-bottom: 0.7em;
+    }
+}
+
+.also {
+    color: darken(#f1f1f1, 25);
+    font-size: 0.7em;
+    text-align: right;
+}
+
+[role="contentinfo"] {
+    background-color: $footerBgColor;
+    color: darken(#f1f1f1, 30);
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+    margin-top: 1.2em;
+    padding: 1.6em 0 1.7em 0;
+    text-align: center;
+    text-transform: uppercase;
+}

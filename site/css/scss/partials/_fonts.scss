@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "slenderman";
+    src: url("../fonts/Slenderman-Regular.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/Slenderman-Regular.woff") format("woff"),
+         url("../fonts/Slenderman-Regular.ttf") format("truetype"),
+         // A note on this long ID:
+         // I used Font Prep to convert the .otf to the needed formats. It
+         // doesn"t use the font name as an id. If you"d rather the ID match
+         // the name you can regenerate the formats with Font Squirrel, but it
+         // will probably be down again because it"s Friday and Font Squirrel
+         // is always down on Fridays. Just give up and stick with the long
+         // ID, it doesn"t matter you"ll never look at it anyway.
+         url("../fonts/Slenderman-Regular.svg#cdcc4b7c46b7fffd4fe45cec8a36dd26") format("svg");
+}
+
+@mixin slenderman {
+    font-family: "slenderman", arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
