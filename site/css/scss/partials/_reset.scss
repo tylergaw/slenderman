@@ -1,13 +1,10 @@
 html, body, div, span,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, h3, p,
 a,
 em, img, q,
 small, strong,
-b, i,
-dl, dt, dd, ol, ul, li,
-article, aside,
-figure, figcaption, footer, header, hgroup,
-menu, nav, section, mark {
+b, i, ul, li,
+footer, header {
     margin: 0;
     padding: 0;
     border: 0;
@@ -20,26 +17,15 @@ body {
     line-height: 1;
 }
 
-ol, ul {
+ul {
     list-style: none;
 }
 
-blockquote, q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-
-i, em, mark {
+i, em {
     font-style: italic;
 }
 
-h1, h2, h3, h4, h5, h6,
-b, strong, mark {
+h1, h2, h3,
+b, strong {
     font-weight: normal;
 }
