@@ -81,7 +81,7 @@ a {
 }
 
 .download {
-    margin-bottom: 1em;
+    margin: 0.2em 0 1.4em 0;
     text-align: center;
 }
 
@@ -103,6 +103,15 @@ a {
         text-transform: uppercase;
     }
 
+    i {
+        border-bottom: 2px solid $backgroundColor;
+        font-size: 0.5em;
+        font-style: normal;
+        letter-spacing: 0.01em;
+        margin-right: -0.2em;
+        vertical-align: super;
+    }
+
     &:hover {
         background-color: $accentColorComplement;
         color: $footerBgColor;
@@ -110,7 +119,7 @@ a {
 }
 
 .description {
-    color: darken(#f1f1f1, 5);
+    color: darken(#f1f1f1, 15);
     font-size: 0.8em;
     padding: 1em 0.2em 0.2em 0.2em;
 
@@ -122,9 +131,19 @@ a {
 }
 
 .also {
+    background-color: darken(#f1f1f1, 35);
     color: darken(#f1f1f1, 25);
+    height: 1px;
     font-size: 0.7em;
     text-align: right;
+
+    span {
+        background-color: $backgroundColor;
+        display: inline-bock;
+        padding-left: 0.3em;
+        position: relative;
+        top: -0.6em;
+    }
 }
 
 [role="contentinfo"] {
@@ -132,8 +151,8 @@ a {
     color: darken(#f1f1f1, 30);
     font-size: 0.8em;
     letter-spacing: 0.05em;
-    margin-top: 1.2em;
-    padding: 1.6em 0 1.7em 0;
+    margin-top: 1.4em;
+    padding: 2em 0 2.4em 0;
     text-align: center;
     text-transform: uppercase;
 }
