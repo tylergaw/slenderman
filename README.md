@@ -6,5 +6,9 @@
 - Patience
 
 ## What did I learn?
+- (Glyphs specific) Components need special treatment before exporting. A component is a glyph that
+is made up of other glyphs. Examples include the ellipsis; made of three periods,
+right/left double quotes; made of right/left single quotes. Before exporting, open
+each component glyph. In the Glyph Menu choose Decompose Component (shift+cmd+D).
 - Making a font is real fucking hard.
 - Making a font is real fucking satisfying.
