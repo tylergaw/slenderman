@@ -18,10 +18,15 @@ body {
     color: #f1f1f1;
     @include slenderman;
     font-size: 2.2em;
+    transition: font-size 0.2s;
 
     @media all and (min-width: 500px) {
         font-size: 2.8em;
     }
+}
+
+::selection {
+    background-color: $accentColor;
 }
 
 a {
@@ -47,6 +52,7 @@ a {
         letter-spacing: -0.03em;
         line-height: 0.9;
         text-transform: uppercase;
+        transition: font-size 0.2s;
 
         @media all and (min-width: 320px) {
             font-size: 3.6em;
@@ -63,6 +69,10 @@ a {
         @media all and (min-width: 650px) {
             font-size: 6.2em;
         }
+
+        @media all and (min-width: 850px) {
+            font-size: 8em;
+        }
     }
 
     h2 {
@@ -78,6 +88,8 @@ a {
     margin: 0 auto;
     max-width: 800px;
     width: 85%;
+
+    text-align: center;
 }
 
 .download {
