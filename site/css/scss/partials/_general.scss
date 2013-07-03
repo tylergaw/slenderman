@@ -1,10 +1,6 @@
-$accentColor: rgb(40, 162, 185);
-$accentColor: #b0c46b;
 $accentColor: #ad78cc;
-
 $backgroundColor: rgb(34, 33, 28);
 $footerBgColor: darken($backgroundColor, 1.2);
-
 $accentColorComplement: adjust-hue(darken($accentColor, 10), 180);
 
 html {
@@ -14,6 +10,7 @@ html {
 
 body {
     background-color: $backgroundColor;
+    background-image: linear-gradient(20deg, #435e74, #43324e, $backgroundColor);
     border-top: 20px solid darken($accentColor, 10);
     color: #f1f1f1;
     @include slenderman;
@@ -93,7 +90,7 @@ a {
 }
 
 .download {
-    margin: 0.2em 0 1.4em 0;
+    margin: 0.2em 0 0.8em 0;
     text-align: center;
 }
 
@@ -143,19 +140,10 @@ a {
 }
 
 .also {
-    background-color: darken(#f1f1f1, 35);
     color: darken(#f1f1f1, 25);
-    height: 1px;
-    font-size: 0.7em;
+    font-size: 0.6em;
+    padding-right: 0.2em;
     text-align: right;
-
-    span {
-        background-color: $backgroundColor;
-        display: inline-bock;
-        padding-left: 0.3em;
-        position: relative;
-        top: -0.6em;
-    }
 }
 
 [role="contentinfo"] {
@@ -163,7 +151,7 @@ a {
     color: darken(#f1f1f1, 30);
     font-size: 0.8em;
     letter-spacing: 0.05em;
-    margin-top: 1.4em;
+    margin-top: 1em;
     padding: 2em 0 2.4em 0;
     text-align: center;
     text-transform: uppercase;
