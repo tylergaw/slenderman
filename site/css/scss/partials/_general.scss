@@ -95,8 +95,9 @@ a {
 }
 
 .download-btn {
-    background-color: adjust-hue($accentColorComplement, 90);
-    border-bottom: 0;
+    $btnBgColor: adjust-hue($accentColorComplement, 90);
+    background-color: $btnBgColor;
+    border-bottom: 1px solid darken($btnBgColor, 40);
     border-radius: 4px;
     box-sizing: border-box;
     color: $backgroundColor;
@@ -123,6 +124,7 @@ a {
 
     &:hover {
         background-color: $accentColorComplement;
+        border-bottom-color: darken($accentColorComplement, 40);
         color: $footerBgColor;
     }
 }
